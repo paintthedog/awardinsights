@@ -3,7 +3,7 @@
 <meta name="description" content="Where any institution stands against the Carnegie R1, R2, and RCU thresholds, what binds it, and where the newest data points for 2028.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Readex+Pro:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Readex+Pro:wght@300;400;500;600;700&display=swap">
 <style>
 :root{
   color-scheme:light;
@@ -48,7 +48,7 @@ body{margin:0;background:var(--ground);color:var(--ink);font-family:"Readex Pro"
 h1,h2,h3{margin:0}
 .mono{font-family:"Readex Pro",system-ui,sans-serif;font-variant-numeric:tabular-nums;font-weight:400}
 .masthead{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;padding-bottom:6px}
-.masthead h1{font-family:"Faculty Glyphic",Georgia,serif;font-weight:400;font-size:26px;letter-spacing:-.01em}
+.masthead h1{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:26px;letter-spacing:-.01em}
 .masthead .sub{color:var(--muted);font-size:13.5px;max-width:66ch}
 .tag{margin-left:auto;font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:var(--faint);border:1px solid var(--line);border-radius:2px;padding:4px 8px}
 .legendbar{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin:16px 0 20px;font-size:12px;color:var(--muted)}
@@ -62,15 +62,15 @@ h1,h2,h3{margin:0}
 .results button{display:flex;width:100%;text-align:left;gap:10px;align-items:baseline;background:none;border:0;border-bottom:1px solid var(--line-soft);padding:10px 14px;color:var(--ink);font-family:inherit;font-size:14px;cursor:pointer}
 .results button:last-child{border-bottom:0}
 .results button:hover,.results button:focus{background:var(--accent-soft);outline:none}
-.results .rn{font-family:"Faculty Glyphic",Georgia,serif;font-weight:400}
+.results .rn{font-family:"Young Serif",Georgia,serif;font-weight:400}
 .results .rs{margin-left:auto;color:var(--faint);font-size:12px;white-space:nowrap}
 .empty{background:var(--paper);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow);padding:30px 28px;margin-bottom:22px}
-.empty h2{font-family:"Faculty Glyphic",Georgia,serif;font-weight:400;font-size:21px;margin-bottom:8px}
+.empty h2{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:21px;margin-bottom:8px}
 .empty p{color:var(--muted);font-size:14px;max-width:70ch;margin:0 0 14px}
 .tierdefs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:6px}
 @media(max-width:720px){.tierdefs{grid-template-columns:1fr}}
 .tierdef{border:1px solid var(--line);border-radius:8px;padding:13px 15px}
-.tierdef .th{display:flex;align-items:center;gap:8px;font-weight:400;font-family:"Faculty Glyphic",Georgia,serif;font-size:15px}
+.tierdef .th{display:flex;align-items:center;gap:8px;font-weight:400;font-family:"Young Serif",Georgia,serif;font-size:15px}
 .tierdef .th .sw{width:12px;height:12px;border-radius:50%}
 .tierdef .rq{font-size:12.5px;color:var(--muted);margin-top:6px;line-height:1.5}
 .pe-picks{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:18px}
@@ -80,12 +80,12 @@ h1,h2,h3{margin:0}
 /* standing panel */
 .stand{background:var(--paper);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow);overflow:hidden;margin-bottom:20px}
 .stand .hd{display:flex;flex-wrap:wrap;align-items:flex-start;gap:12px 18px;padding:20px 22px 16px;border-bottom:1px solid var(--line-soft)}
-.stand .nm{font-family:"Faculty Glyphic",Georgia,serif;font-weight:400;font-size:22px;line-height:1.15;letter-spacing:-.01em}
+.stand .nm{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:22px;line-height:1.15;letter-spacing:-.01em}
 .stand .loc{color:var(--muted);font-size:13px;margin-top:3px}
 .stand .old{color:var(--faint);font-size:12px;margin-top:6px}
 .badge{margin-left:auto;text-align:center;padding:10px 16px;border-radius:8px;color:#fff;min-width:120px}
 .badge .bt{font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.85}
-.badge .bd{font-family:"Faculty Glyphic",Georgia,serif;font-weight:400;font-size:26px;line-height:1.1;margin-top:2px}
+.badge .bd{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:26px;line-height:1.1;margin-top:2px}
 .badge.R1{background:var(--t1)}.badge.R2{background:var(--t2)}.badge.RCU{background:var(--t3);color:#0b2540}
 .badge.RCU .bt{opacity:.7}
 .ladder{padding:8px 22px 20px}
@@ -125,7 +125,7 @@ h1,h2,h3{margin:0}
 .plot{position:relative;width:100%}
 svg{display:block;width:100%;height:auto;overflow:visible}
 .tt{position:fixed;z-index:50;pointer-events:none;background:var(--paper);border:1px solid var(--line);border-radius:6px;box-shadow:var(--shadow);padding:8px 10px;font-size:12px;max-width:230px;opacity:0;transition:opacity .08s}
-.tt .ttn{font-family:"Faculty Glyphic",Georgia,serif;font-weight:400;font-size:13px}
+.tt .ttn{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:13px}
 .tt .ttr{color:var(--muted);font-size:11.5px;margin-top:2px}
 .axlab{fill:var(--muted);font-size:11px;font-family:"Readex Pro",sans-serif}
 .axttl{fill:var(--muted);font-size:11.5px;font-weight:600;font-family:"Readex Pro",sans-serif;text-transform:uppercase;letter-spacing:.06em}
@@ -146,7 +146,7 @@ svg{display:block;width:100%;height:auto;overflow:visible}
 .mvrow.hdr{cursor:default;background:var(--line-soft);border-bottom:1px solid var(--line)}
 .mvrow.hdr:hover{background:var(--line-soft)}
 .mvrow .rk{font-family:"Readex Pro",system-ui,sans-serif;font-size:13px;color:var(--faint);text-align:right}
-.mvrow .mn{font-family:"Faculty Glyphic",Georgia,serif;font-weight:400;font-size:14.5px}
+.mvrow .mn{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:14.5px}
 .mvrow .ms{grid-column:2;font-size:12px;color:var(--muted);margin-top:1px}
 .mvrow .cell{text-align:right;font-size:13px;min-width:0;font-variant-numeric:tabular-nums}
 .mvrow .cell.mono{font-family:"Readex Pro",system-ui,sans-serif}
@@ -637,9 +637,9 @@ function briefHTML(d){
 .page{max-width:780px;margin:0 auto;padding:32px 36px}
 .top{display:flex;align-items:flex-start;gap:16px;border-bottom:2px solid var(--ink);padding-bottom:12px}
 .eyb{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-h1{font-family:"Faculty Glyphic",Georgia,serif;font-weight:400;font-size:24px;margin:2px 0 2px;line-height:1.15}
+h1{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:24px;margin:2px 0 2px;line-height:1.15}
 .loc{color:var(--muted)}
-.badge{margin-left:auto;text-align:center;padding:8px 14px;border-radius:6px;color:#fff;min-width:110px}.badge .bt{font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;opacity:.85}.badge .bd{font-family:Faculty Glyphic,Georgia,serif;font-weight:400;font-size:24px}
+.badge{margin-left:auto;text-align:center;padding:8px 14px;border-radius:6px;color:#fff;min-width:110px}.badge .bt{font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;opacity:.85}.badge .bd{font-family:Young Serif,Georgia,serif;font-weight:400;font-size:24px}
 .R1{background:var(--t1)}.R2{background:var(--t2)}.RCU{background:var(--t3);color:#0b2540}
 h3{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:18px 0 8px}
 .facts{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:6px;margin-top:14px}
@@ -661,7 +661,7 @@ svg{width:100%;height:auto;display:block}.axlab{fill:var(--muted);font-size:10px
 .dq{margin-top:12px;padding:8px 11px;border:1px dashed var(--line);background:#f6f4ee}.dq p{margin:2px 0;font-size:11px;color:var(--muted)}.dq b{color:var(--ink)}
 @media print{.page{padding:0}@page{margin:.5in}}`;
   const na=newAvg(d);
-  return `<!doctype html><html><head><meta charset="utf-8"><title>${esc(d.n)} — Research Designation Brief</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Readex+Pro:wght@400;500;600&display=swap"><style>${css}</style></head><body><div class="page">
+  return `<!doctype html><html><head><meta charset="utf-8"><title>${esc(d.n)} — Research Designation Brief</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Readex+Pro:wght@400;500;600&display=swap"><style>${css}</style></head><body><div class="page">
   <div class="top"><div><div class="eyb">Research Designation Brief · ${today}</div><h1>${esc(d.n)}</h1><div class="loc">${d.city}, ${d.st}${d.ct?" · "+d.ct:""}${d.en?" · "+Math.round(d.en).toLocaleString()+" students":""}</div></div>
   <div class="badge ${d.des}"><div class="bt">2025 designation</div><div class="bd">${d.des}</div></div></div>
   <div class="facts">
@@ -762,7 +762,7 @@ function drawScatter(){
     s+=`<line x1="${ax}" y1="${ay}" x2="${lx}" y2="${ly}" stroke="var(--you)" stroke-width="1.5" opacity="0.6"/>`;
     s+=`<circle cx="${ax}" cy="${ay}" r="3.5" fill="none" stroke="var(--you)" stroke-width="1.5"/>`;
     s+=`<circle cx="${sx(bestE(d))}" cy="${sy(bestD(d))}" r="6.5" fill="var(--you)" stroke="var(--paper)" stroke-width="1.6" data-u="${d.u}" class="pt"/>`;
-    s+=`<text x="${sx(bestE(d))+9}" y="${sy(bestD(d))+4}" style="fill:var(--you);font-size:12px;font-weight:400;font-family:Faculty Glyphic,Georgia,serif">${d.n.replace(/&/g,'&amp;').replace(/</g,'&lt;').slice(0,30)}</text>`;
+    s+=`<text x="${sx(bestE(d))+9}" y="${sy(bestD(d))+4}" style="fill:var(--you);font-size:12px;font-weight:400;font-family:Young Serif,Georgia,serif">${d.n.replace(/&/g,'&amp;').replace(/</g,'&lt;').slice(0,30)}</text>`;
   }
   svg.innerHTML=s;
   svg.querySelectorAll(".pt").forEach(c=>{

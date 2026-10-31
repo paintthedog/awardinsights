@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /federal/data/
+Disallow: /nih/data/
+Disallow: /nsf/data/

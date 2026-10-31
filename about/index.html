@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<!-- © 2026 Award Insights · awardinsights.org · All rights reserved. -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About Award Insights</title>
+<meta name="description" content="What Award Insights shows, where its data comes from, how the numbers are counted, and terms of use.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Readex+Pro:wght@300;400;500;600;700&display=swap">
+<style>
+:root{
+  color-scheme:light;
+  --ground:#f4f5f8;--paper:#fff;--ink:#191917;--muted:#63625c;--faint:#8f8d85;
+  --line:#dfe2e8;--line-soft:#eceef2;
+  --accent:#1f4fd8;--accent-ink:#163a9e;--accent-soft:#e3eafe;
+}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  color-scheme:dark;
+  --ground:#0d0f10;--paper:#17191b;--ink:#e9e9e3;--muted:#9a9a91;--faint:#6a6a63;
+  --line:#292b2d;--line-soft:#202224;
+  --accent:#4f7bf0;--accent-ink:#9db8ff;--accent-soft:#15224a;
+}}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --ground:#0d0f10;--paper:#17191b;--ink:#e9e9e3;--muted:#9a9a91;--faint:#6a6a63;
+  --line:#292b2d;--line-soft:#202224;
+  --accent:#4f7bf0;--accent-ink:#9db8ff;--accent-soft:#15224a;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:"Readex Pro",system-ui,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:26px 20px 48px}
+h1{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:clamp(30px,5vw,40px);letter-spacing:-.01em;margin:28px 0 8px}
+h2{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:22px;margin:36px 0 10px}
+h3{font-size:15px;font-weight:600;margin:0 0 2px}
+.lede{color:var(--muted);font-size:15.5px;max-width:60ch;margin:0}
+p,li{font-size:14.5px}
+p{margin:0 0 10px}
+ul{margin:0 0 10px;padding-left:20px}
+li{margin:0 0 6px}
+li::marker{color:var(--faint)}
+a{color:var(--accent-ink);text-decoration:none}
+a:hover,a:focus-visible{text-decoration:underline}
+.tools{display:grid;gap:10px;margin-top:4px}
+.tool{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.tool p{margin:4px 0 0;color:var(--muted);font-size:13.5px}
+.tool .src{color:var(--ink)}
+.note{color:var(--muted);font-size:13.5px}
+footer{margin-top:40px;color:var(--faint);font-size:12px}
+</style>
+<link rel="icon" type="image/svg+xml" href="/shared/favicon.svg?v=3ec05e339f">
+<script src="/shared/theme.js?v=0c281a43e3"></script>
+<link rel="stylesheet" href="/shared/site.css?v=d065d6d9eb">
+<script src="/shared/site.js?v=75a29e9426" data-inst="/shared/inst.json?v=8ac8308588" defer></script>
+</head>
+<body>
+<div class="wrap">
+<header class="sitebar" data-tool="about"><a class="home" href="/">Award Insights</a><nav aria-label="Tools"><a href="/federal/" data-t="federal" title="Federal Award Insights">Federal</a><a href="/nih/" data-t="nih" title="NIH Award Insights">NIH</a><a href="/nsf/" data-t="nsf" title="NSF Award Insights">NSF</a><a href="/designations/" data-t="designations" title="Research Activity Designations">Designations</a><a href="/portfolio/" data-t="portfolio" title="Research Portfolio Trends">Portfolio</a></nav><button class="theme" type="button" aria-label="Switch light or dark mode" title="Switch light or dark mode"><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg></button></header>
+  <h1>About Award Insights</h1>
+  <p class="lede">A free, public look at where federal research money goes to U.S. colleges and universities, alongside the peers you choose. It describes the data; it does not rate institutions.</p>
+
+  <h2>The five tools and their sources</h2>
+  <div class="tools">
+    <div class="tool"><h3><a href="/federal/">Federal Award Insights</a></h3>
+      <p><span class="src">USAspending.gov Award Data Archive</span>, FY2022–26, 31 agencies (files dated October 6, 2026; data through September 30, 2026). Project grants, cooperative agreements and contracts, counted as obligations by fiscal year. Subawards come from USAspending's subaward records, as reported by prime recipients.</p></div>
+    <div class="tool"><h3><a href="/nih/">NIH Award Insights</a></h3>
+      <p><span class="src">NIH's own award records (RePORTER)</span>, FY2022–26 (pulled October 26, 2026). Each award counts at its total cost in the fiscal year NIH records it. Hospitals are left out unless a university claims them in HERD, and researchers aren't named.</p></div>
+    <div class="tool"><h3><a href="/nsf/">NSF Award Insights</a></h3>
+      <p><span class="src">NSF's own award records</span>, FY2022–26 (pulled October 31, 2026). Each award counts at its full intended value in the year it was made, with an option to see what NSF has obligated so far.</p></div>
+    <div class="tool"><h3><a href="/designations/">Research Activity Designations</a></h3>
+      <p><span class="src">Carnegie Classifications 2025 Research Activity Designations</span>, with R&amp;D spending from NSF's HERD survey (FY2020–24) and research doctorates from IPEDS (AY2020–21 to 2024–25).</p></div>
+    <div class="tool"><h3><a href="/portfolio/">Research Portfolio Trends</a></h3>
+      <p><span class="src">NSF's Higher Education R&amp;D (HERD) survey</span>, FY2020–24: the R&amp;D spending each institution reports, by funding source and field of science.</p></div>
+  </div>
+
+  <h2 id="differences">Why figures differ between sources</h2>
+  <p>The same money can show different figures across these tools. The sources record different things at different times, so a difference usually doesn't mean either one is wrong.</p>
+  <ul>
+    <li><b>Federal and NIH Award Insights.</b> Both cover NIH money: Federal from USAspending, NIH Award Insights from NIH's own records. Their totals are close, but one institution or one year can differ more, because the two sources date and record awards differently.</li>
+    <li><b>Federal and NSF Award Insights.</b> NSF Award Insights counts each award once, at its full intended value, in the year it was made. Federal counts the money obligated in each year, including later payments on older awards. NSF's "obligated to date" view also files payments under the year an award was made, so its yearly figures differ from Federal's too.</li>
+    <li><b>Awards and R&amp;D spending.</b> Portfolio and Designations use the R&amp;D spending institutions report to NSF's HERD survey, from all funding sources. An award made in one year can be spent over several, so awards and spending don't move together from year to year, and one isn't a reliable estimate of the other.</li>
+    <li><b>Hospitals.</b> The award tools generally leave hospitals out, while a university's HERD report can include work at affiliated hospitals. A university whose research runs largely through hospitals can show less in awards than in HERD.</li>
+    <li><b>Timing.</b> Each source updates on its own schedule, using the dates listed above, and recent years are still being revised.</li>
+  </ul>
+
+  <h2>How Federal Award Insights counts money</h2>
+  <ul>
+    <li><b>Obligations, not award values.</b> Dollars are what agencies obligated in each fiscal year, including continuing payments on earlier awards.</li>
+    <li><b>Award types.</b> Project grants, cooperative agreements and contracts count: the kinds of awards institutions generally apply for. USAspending doesn't record whether a grant was competed, so these are not all open competitions. Formula and block grants, direct payments, loans and student aid do not count, nor do formula programs recorded as project grants that we have identified (such as HBCU Title III).</li>
+    <li><b>New award codes.</b> From late 2025, agencies began recording grants with new USAspending codes that don't say whether a grant is a project or formula grant. Such a grant counts when its program was mostly project grants and cooperative agreements in FY2022–25. ARPA-H, which records most of its research awards as direct payments, counts whatever the code.</li>
+    <li><b>Projects, not operations or buildings.</b> Grants for running an institution, such as improvements to a university-owned airport or campus buses, don't count. Grants for buildings and infrastructure, such as NIH research construction grants, are listed under each institution's programs but kept out of totals, ranks and peer comparisons, as HERD leaves construction out.</li>
+    <li><b>Pullbacks.</b> Money pulled back from an award comes off the year it was given, so no year goes below zero. Pullbacks are mostly routine revisions and closeouts, not cancellations. Returns of money obligated before FY2022 are not subtracted, since that money was never counted.</li>
+    <li><b>Earmarks.</b> Congressionally directed spending is listed and tagged but kept out of totals, ranks and peer comparisons.</li>
+    <li><b>Aligned with HERD.</b> Where there's a choice, an institution's figures follow what it would report to NSF's HERD survey. Contracts to run federally funded research and development centers (such as national laboratories and MIT Lincoln Laboratory) are left out. University-affiliated research centers count with their university, so Johns Hopkins includes its Applied Physics Laboratory.</li>
+    <li><b>Recipients.</b> Awards are matched to institutions by recipient ID through a hand-checked crosswalk. System offices, independent research institutes that report to HERD (such as Scripps Research and Woods Hole) and foreign institutions are shown as their own entities. For-profit institutions are left out. Hospitals, including academic medical centers affiliated with universities, are left out (about $17.7B over FY2022–26), so a university whose research runs largely through affiliated hospitals shows less here than in NSF's HERD survey.</li>
+    <li><b>Timing.</b> Agencies obligate money on different schedules: NSF often obligates a multi-year grant in its first year, while NIH usually obligates year by year, so year-to-year changes for one agency partly reflect timing.</li>
+    <li><b>Comparing administrations.</b> The By agency trend and the Analysis tab compare months since January 20, 2025 (the current administration, from February 2025 since the change falls mid-month) with the same months of FY2022–24 (the previous administration's full fiscal years), so seasonal swings cancel out. Congress sets budgets and agencies spend over time, so a change can reflect appropriations, timing or policy; the site shows what changed and when, not why. FY2022–24 includes one-time money (the Inflation Reduction Act, the infrastructure law, pandemic programs), so some declines are partly a return from unusually high years.</li>
+    <li><b>Programs moved between agencies.</b> Money counts under the agency that awarded it. Where an agency has newly awarded another agency's programs (for example, Education programs awarded through Labor in FY2026), the agency pages say so.</li>
+    <li><b>Latest data.</b> Recent views compare rolling windows with the same weeks a year earlier. FY2026 has ended but is still being revised: agencies report some actions late, and Defense publishes contracts about 90 days after the fact. The latest eight weeks are still filling in, because agencies report with a lag.</li>
+    <li><b>Subawards.</b> Amounts are as reported by prime recipients. Duplicate filings count once, and no prime award's subawards count above the award's own value. Money that reaches an institution through a state under formula or block programs is left out. FY2026 is still being reported.</li>
+  </ul>
+
+  <h2>Peers</h2>
+  <p>Peers are the institutions that share the characteristics you choose to hold constant, such as research designation, R&amp;D expenditure, control and degree focus, from the 2025 Carnegie Classifications and IPEDS. Comparisons with peers use the median.</p>
+
+  <h2>Use</h2>
+  <p>The underlying data is public. The analysis, crosswalk, compilation, code and design are © 2026 Award Insights. You are welcome to use and cite what you find here; please don't scrape or republish the data or the site in bulk.</p>
+
+  <footer>© 2026 Award Insights. All rights reserved.</footer>
+</div>
+</body>
+</html>

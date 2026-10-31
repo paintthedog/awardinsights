@@ -1,0 +1,70 @@
+/*! © 2026 Award Insights · awardinsights.org · All rights reserved. */
+/* Site bar shared by every page. Uses each page's own tokens (--ink, --muted, --faint, --line, --accent, --paper). */
+.sitebar{--bar:#23262b;display:flex;align-items:center;gap:6px 22px;flex-wrap:wrap;margin:-8px 0 22px;padding:2px 0 12px;background:var(--bar);box-shadow:0 0 0 100vmax var(--bar);clip-path:inset(-100vmax -100vmax 0)}
+[data-tool="federal"]{--bar:#1f4fd8}[data-tool="nih"]{--bar:#00777a}[data-tool="nsf"]{--bar:#6a2fd6}[data-tool="designations"]{--bar:#a81e74}[data-tool="portfolio"]{--bar:#cf3f1a}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) [data-tool="federal"]{--bar:#1d3f9e}:root:not([data-theme="light"]) [data-tool="nih"]{--bar:#075f62}:root:not([data-theme="light"]) [data-tool="nsf"]{--bar:#4d23a0}:root:not([data-theme="light"]) [data-tool="designations"]{--bar:#861a5d}:root:not([data-theme="light"]) [data-tool="portfolio"]{--bar:#a82f12}}
+:root[data-theme="dark"] [data-tool="federal"]{--bar:#1d3f9e}:root[data-theme="dark"] [data-tool="nih"]{--bar:#075f62}:root[data-theme="dark"] [data-tool="nsf"]{--bar:#4d23a0}:root[data-theme="dark"] [data-tool="designations"]{--bar:#861a5d}:root[data-theme="dark"] [data-tool="portfolio"]{--bar:#a82f12}
+.sitebar .home{font-family:"Young Serif",Georgia,serif;font-size:17px;color:#fff;text-decoration:none;white-space:nowrap}
+.sitebar .home:hover,.sitebar .home:focus-visible{color:#fff;text-decoration:underline}
+.sitebar nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;margin-left:auto;max-width:100%}
+.sitebar nav::-webkit-scrollbar{display:none}
+.sitebar nav a{font:500 13px/1 "Readex Pro",system-ui,sans-serif;color:rgba(255,255,255,.85);text-decoration:none;padding:8px 11px;border-radius:5px;white-space:nowrap}
+.sitebar nav a:hover,.sitebar nav a:focus-visible{color:#fff;background:rgba(255,255,255,.18)}
+.sitebar nav a[aria-current="page"]{color:var(--bar);background:#fff}
+/* light/dark switch: shows the moon while light is in effect, the sun while dark is */
+.sitebar .theme{display:grid;place-items:center;width:34px;height:34px;padding:0;border:1px solid rgba(255,255,255,.45);border-radius:999px;background:transparent;color:#fff;cursor:pointer}
+.sitebar .theme:hover,.sitebar .theme:focus-visible{background:rgba(255,255,255,.18);border-color:#fff;outline:none}
+.sitebar .theme svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.sitebar .i-sun{display:none}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .sitebar .i-sun{display:block}:root:not([data-theme="light"]) .sitebar .i-moon{display:none}}
+:root[data-theme="dark"] .sitebar .i-sun{display:block}:root[data-theme="dark"] .sitebar .i-moon{display:none}
+@media(max-width:620px){.sitebar .theme{order:1;margin-left:auto}.sitebar nav{order:2;flex-basis:100%;margin-left:-11px}}
+
+.foot a,.ai-src a{color:var(--accent-ink,var(--accent))}
+/* bottom of every page: link to the About page */
+.ai-foot{max-width:1120px;margin:28px auto 36px;padding:14px 20px 0;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;font:400 13px/1.5 "Readex Pro",system-ui,sans-serif;color:var(--faint)}
+.ai-foot .c{margin-left:auto}
+.ai-foot a{color:var(--accent-ink,var(--accent));text-decoration:none;font-weight:500}
+.ai-foot a:hover,.ai-foot a:focus-visible{text-decoration:underline}
+
+/* explanations as bullet lists (site.js turns long paragraphs into these) */
+.ai-bul{margin:0;padding-left:18px}
+.ai-bul li{margin:0 0 5px;line-height:1.5}
+.ai-bul li::marker{color:var(--faint)}
+
+/* the tools' long methods paragraphs, closed by default */
+.ai-methods{max-width:1120px;margin:24px auto 0;font:400 13px/1.5 "Readex Pro",system-ui,sans-serif}
+.ai-methods>summary{display:inline-flex;align-items:center;gap:9px;cursor:pointer;list-style:none;color:var(--muted)}
+.ai-methods>summary::-webkit-details-marker{display:none}
+.ai-methods>summary::before{content:"";width:5px;height:5px;border-right:1.25px solid var(--faint);border-bottom:1.25px solid var(--faint);transform:rotate(-45deg);transition:transform .15s}
+.ai-methods[open]>summary::before{transform:rotate(45deg) translate(-1px,-1px)}
+.ai-methods>summary:hover{color:var(--accent-ink,var(--accent))}
+.ai-methods>.foot{margin-top:10px}
+
+/* where each tool's numbers come from */
+.ai-src{position:relative;margin:-10px 0 14px;font:400 12.5px/1.5 "Readex Pro",system-ui,sans-serif;color:var(--faint)}
+.ai-src>summary{display:inline-flex;align-items:center;gap:6px;cursor:pointer;list-style:none;color:var(--muted)}
+.ai-src>summary::-webkit-details-marker{display:none}
+.ai-src>summary::before{content:none!important}
+.ai-src>summary::after{content:"i";display:inline-grid;place-items:center;width:15px;height:15px;border-radius:50%;border:1px solid var(--line);font:600 9.5px/1 "Readex Pro",system-ui,sans-serif;font-style:italic;color:var(--faint)}
+.ai-src>summary:hover,.ai-src[open]>summary{color:var(--accent-ink)}
+.ai-src>div{position:absolute;z-index:40;top:24px;left:0;width:min(560px,calc(100vw - 32px));background:var(--paper);border:1px solid var(--line);border-radius:8px;box-shadow:0 10px 30px -14px rgba(20,20,18,.3);padding:10px 13px;color:var(--muted)}
+.ai-src a{color:var(--muted);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:2px}
+.ai-src a:hover,.ai-src a:focus-visible{color:var(--accent);text-decoration-color:currentColor}
+
+/* "i" popovers holding card explanations (NSF, Portfolio; Federal styles its own) */
+.card{position:relative}
+.infobtn{display:inline-grid;place-items:center;width:17px;height:17px;margin-left:6px;padding:0;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--faint);font:italic 600 10.5px/1 "Readex Pro",system-ui,sans-serif;cursor:pointer;vertical-align:middle}
+.infobtn:hover,.infobtn:focus-visible,.infobtn[aria-expanded="true"]{color:var(--accent-ink,var(--accent));border-color:var(--accent);outline:none}
+.infopop{position:absolute;left:14px;right:14px;max-width:560px;z-index:40;background:var(--paper);border:1px solid var(--line);border-radius:8px;box-shadow:0 10px 30px -14px rgba(20,20,18,.3);padding:10px 13px;font:400 12.5px/1.5 "Readex Pro",system-ui,sans-serif;color:var(--muted)}
+.infopop .csub{margin:0;font-size:12.5px;color:var(--muted)}
+
+/* search hits from other tools, and the note shown when this tool doesn't cover the chosen institution */
+.results .ai-sep{padding:8px 12px 4px;font:600 10.5px/1.2 "Readex Pro",system-ui,sans-serif;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);border-top:1px solid var(--line)}
+.results button.ai-other .rs{color:var(--faint)}
+.ai-note{margin:0 0 22px;padding:14px 16px;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:6px;background:var(--paper);font:400 14px/1.5 "Readex Pro",system-ui,sans-serif;color:var(--ink)}
+.ai-note b{font-weight:600}
+.ai-note .why{color:var(--muted)}
+.ai-note .go{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.ai-note .go a{font-size:13px;color:var(--accent-ink,var(--accent));text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:5px 12px}
+.ai-note .go a:hover,.ai-note .go a:focus-visible{border-color:var(--accent)}
